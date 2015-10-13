@@ -48,6 +48,9 @@
             this.btnUp = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblScore = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl00
@@ -266,11 +269,43 @@
             this.btnDown.UseVisualStyleBackColor = true;
             this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(297, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 49);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblScore.Location = new System.Drawing.Point(352, 59);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(23, 25);
+            this.lblScore.TabIndex = 21;
+            this.lblScore.Text = "4";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(334, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Total";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // TwoZeroFourEightView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 428);
+            this.ClientSize = new System.Drawing.Size(443, 433);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblScore);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.btnUp);
@@ -291,9 +326,11 @@
             this.Controls.Add(this.lbl02);
             this.Controls.Add(this.lbl01);
             this.Controls.Add(this.lbl00);
-            this.Name = "Form1";
+            this.Name = "TwoZeroFourEightView";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.TwoZeroFourEightView_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -319,6 +356,9 @@
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btnRight;
         private System.Windows.Forms.Button btnDown;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Label label1;
     }
 }
 
