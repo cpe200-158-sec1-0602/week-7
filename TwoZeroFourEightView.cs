@@ -24,12 +24,17 @@ namespace twozerofoureight
             controller = new TwoZeroFourEightController();
             controller.AddModel(model);
             controller.ActionPerformed(TwoZeroFourEightController.LEFT);
+
+            TotalView scoreview = new TotalView();
+            model.AttachObserver(scoreview);
+            scoreview.Visible = true;
+            scoreview.Enabled = true;
         }
 
         public void Notify(Model m)
         {
             UpdateBoard(((TwoZeroFourEightModel) m).GetBoard());
-            lblScore.Text = Convert.ToString(TwoZeroFourEightModel.Total);
+            
         }
 
         private void UpdateTile(Label l, int i)
