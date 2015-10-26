@@ -48,8 +48,8 @@
             this.btnUp = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -269,15 +269,6 @@
             this.btnDown.UseVisualStyleBackColor = true;
             this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(297, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 49);
-            this.button1.TabIndex = 20;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // lblScore
             // 
             this.lblScore.AutoSize = true;
@@ -288,12 +279,22 @@
             this.lblScore.TabIndex = 21;
             this.lblScore.Text = "4";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(297, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 49);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.Location = new System.Drawing.Point(334, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 22;
             this.label1.Text = "Total";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -356,8 +357,8 @@
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btnRight;
         private System.Windows.Forms.Button btnDown;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
     }
 }

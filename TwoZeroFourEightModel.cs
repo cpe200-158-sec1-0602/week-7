@@ -11,6 +11,14 @@ namespace twozerofoureight
         protected int boardSize; // default is 4
         protected int[,] board;
         protected Random rand;
+        private static int total = 0;
+
+        public static int Total{
+            
+            get{
+            return total;}
+        }
+
 
         public TwoZeroFourEightModel() : this(4)
         {
@@ -46,6 +54,7 @@ namespace twozerofoureight
                 if (board[x, y] == 0)
                 {
                     board[x, y] = 2;
+                    total += 2;
                     break;
                 }
             }
